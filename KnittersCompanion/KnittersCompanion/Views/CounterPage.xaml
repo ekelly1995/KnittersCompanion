@@ -21,9 +21,25 @@
             <Label Grid.Row="2" Grid.ColumnSpan="2" FontSize="18" TextColor="Black">
                 Use these counters to keep track of  your knitting as you work. It is your perfect on-the-go companion for keeping your spot in your knitting.
             </Label>
-            
+            <Button Grid.Row="3" Text="Increase Row" Command="{Binding IncreaseCount}" VerticalOptions="Center"/>
+            <Label Grid.Row="4" Grid.Column="0" Text="0" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Grid.Row="5" Grid.Column="0" Text="Decrease Row" Command="{Binding DecreaseCount}" VerticalOptions="Center"/>
 
+            <Button Grid.Row="3" Grid.Column="1" Text="Increase Stich" Command="{Binding IncreaseCount}" VerticalOptions="Center"/>
+            <Label x:Name="StitchCount" Grid.Row="4" Grid.Column="1" Text="0" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Grid.Row="5" Grid.Column="1" Text="Decrease Stitch" Command="{Binding DecreaseCount}" VerticalOptions="Center"/>
 
         </Grid>
     </ContentPage.Content>
 </ContentPage>
+    
+    
+<!--
+    Next steps:
+        Add DecreaseCount functionality
+        Get the IncreaseCount functionality working (make the text actually update when the button is pushed)
+        Probably will need to add separate functions/commands for Stitch counter
+        Fix the extra space surrounding the header picture on this page
+    
+    
+    -->
