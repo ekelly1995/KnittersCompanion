@@ -81,7 +81,7 @@
     <FlyoutItem Title="Home" Icon="home_icon.png">
         <ShellContent Route="WelcomePage" ContentTemplate="{DataTemplate local:WelcomePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Stitch & Row Counter" Icon="count_icon.png">
+    <FlyoutItem Title="Stitch/Row Counter" Icon="count_icon.png">
         <ShellContent Route="CounterPage" ContentTemplate="{DataTemplate local:CounterPage}" />
     </FlyoutItem>
 

@@ -13,6 +13,8 @@ namespace KnittersCompanion
             InitializeComponent();
             //Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             //Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
+            Routing.RegisterRoute(nameof(WelcomePage), typeof(WelcomePage));
+            Routing.RegisterRoute(nameof(CounterPage), typeof(CounterPage));
         }
 
         //private async void OnMenuItemClicked(object sender, EventArgs e)
