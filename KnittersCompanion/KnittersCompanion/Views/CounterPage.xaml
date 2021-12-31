@@ -3,10 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KnittersCompanion.Views.CounterPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height=".5*"/>
+                <RowDefinition Height=".5*" />
+                <RowDefinition Height=".5*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" Source="CounterPageHeader.png"/> <!-- This is temporary until I can find/make a better picture -->
+            <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Row &amp; Stitch Counter" FontSize="32" TextColor="Black" />
+            <Label Grid.Row="2" Grid.ColumnSpan="2" FontSize="18" TextColor="Black">
+                Use these counters to keep track of  your knitting as you work. It is your perfect on-the-go companion for keeping your spot in your knitting.
+            </Label>
+            
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
