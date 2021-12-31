@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace KnittersCompanion.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class WelcomeViewModel : BaseViewModel
     {
-        public AboutViewModel()
+        public WelcomeViewModel()
         {
             Title = "About";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
