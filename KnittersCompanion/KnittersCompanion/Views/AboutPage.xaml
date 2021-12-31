@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
         <ScrollView>
             <StackLayout>
-                <Image Row.Grid="0" Source="welcome.jpg"/>
+                <Image Grid.Row="0" Source="welcome.jpg"/>
                 <Label Grid.Row="1" Text="Welcome to KnittingApp"/>
             </StackLayout>
         </ScrollView>
