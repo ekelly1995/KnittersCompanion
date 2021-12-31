@@ -5,12 +5,11 @@ using Xamarin.Forms;
 
 namespace KnittersCompanion.ViewModels
 {
-    public class WelcomeViewModel : BaseViewModel
+    public class CounterViewModel : BaseViewModel
     {
-        public WelcomeViewModel()
+        public CounterViewModel()
         {
-            Title = "Welcome";
+            Title = "Counter";
         }
-
     }
 }
