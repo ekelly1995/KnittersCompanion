@@ -36,9 +36,6 @@
     
 <!--
     Next steps:
-        Add DecreaseCount functionality
-        Get the IncreaseCount functionality working (make the text actually update when the button is pushed)
-        Probably will need to add separate functions/commands for Stitch counter
         Fix the extra space surrounding the header picture on this page
     
     
