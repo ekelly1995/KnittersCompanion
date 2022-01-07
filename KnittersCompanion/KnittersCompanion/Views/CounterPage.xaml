@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KnittersCompanion.Views.CounterPage">
+
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -18,14 +19,14 @@
 
             <Image Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" Source="CounterPageHeader.png"/> <!-- This is temporary until I can find/make a better picture -->
             <Label Grid.Row="1" Grid.ColumnSpan="2" Text="Row &amp; Stitch Counter" FontSize="32" TextColor="Black" />
-            <Label Grid.Row="2" Grid.ColumnSpan="2" FontSize="18" TextColor="Black">
-                Use these counters to keep track of  your knitting as you work. It is your perfect on-the-go companion for keeping your spot in your knitting.
-            </Label>
+            
+            <Button Grid.Row="2" Grid.ColumnSpan="2" Text="Load Last Saved Values" Clicked="Button_LoadSavedCounters" VerticalOptions="Center"/>
+
             <Button Grid.Row="3" Text="Increase Row" Clicked="Button_IncreaseRow" VerticalOptions="Center"/>
             <Label x:Name="RowCount" Grid.Row="4" Grid.Column="0" Text="0" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Button Grid.Row="5" Grid.Column="0" Text="Decrease Row" Clicked ="Button_DecreaseRow" VerticalOptions="Center"/>
 
-            <Button Grid.Row="3" Grid.Column="1" Text="Increase Stich" Clicked ="Button_IncreaseStitch" VerticalOptions="Center"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="Increase Stitch" Clicked ="Button_IncreaseStitch" VerticalOptions="Center"/>
             <Label x:Name="StitchCount" Grid.Row="4" Grid.Column="1" Text="0" FontSize="26" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Button Grid.Row="5" Grid.Column="1" Text="Decrease Stitch" Clicked="Button_DecreaseStitch" VerticalOptions="Center"/>
 
